@@ -1,0 +1,295 @@
+/* *{
+    background-color: rgb(105, 102, 102);
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    background-color: rgb(105, 102, 102);;
+}
+
+.container-1{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width:70%;
+    justify-content: center;
+    margin:auto
+}
+
+.search-bar{
+    flex : 1;
+    border-radius: 20px;
+    border:none;
+    padding:10px;
+    outline:none;
+    font-size:16px;
+    background-color: rgb(31, 31, 31);
+    color :white;
+    margin-left: 10px;
+}
+
+.search-icon {
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    background-color: rgb(31, 31, 31);
+}
+
+.search-icon img{
+    width:25px;
+    height: 25px;
+    color:#ccc;
+}
+
+.search-location{
+    border-radius: 20px;
+    background-color: rgb(120, 197, 4);
+    color:white;
+    cursor: pointer;
+}
+.name{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.time{
+    font-size: 60px;
+}
+.user .day{
+    font-size: 25px;
+    justify-content: center;
+}
+
+.user .dayName{
+    font-size: 25px;
+    justify-content: center;
+}
+
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15em;
+    margin-top: 40px;
+}
+
+.right div{
+    margin : 6.5px 0;
+}
+.user{
+    display: block;
+    /* flex-direction: column; */
+    align-items: center;
+    width:65em;
+    height:200px;
+    justify-content: center;
+    background-color: #333;
+    font-size: 10px;
+    color: white;
+    padding:20px;
+    border-radius: 10px;
+    margin : 50px auto;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.todayWeather{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:65em;
+    height:250px;
+    background-color: #333;
+    font-size: 10px;
+    color: white;
+    padding:20px;
+    border-radius: 10px;
+    margin : 50px auto;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.dayForecast{
+    align-items: center;
+    width:35em;
+    height:500px;
+    justify-content: center;
+    background-color: #333;
+    font-size: 10px;
+    color: white;
+    padding:20px;
+    border-radius: 10px;
+    margin : 50px auto;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.main-details{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.temperature {
+    display: flex;
+    flex-flow: column;
+}
+
+.tempDetails{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap:10px;
+    /* justify-content: center; */
+}
+
+.temp1,.temp2,.temp3,.temp4,.temp5{
+    font-size: 30px;
+}
+ 
+.date1, .date2,.date3,.date4,.date5{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.tempDegree {
+    font-size: 40px;
+}
+
+.city {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.detail-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.weather-icon-value{
+    justify-content: center;
+    font-size: 20px;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.sunrise-sunset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+}
+
+.sunrise-sunset div {
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 5px;
+}
+
+.sunrise-icon,.sunset-icon{
+    width: 40px;
+    height:40px;
+    margin-bottom: 10px;
+}
+
+.sunrise-label,.sunset-label{
+    margin-right: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.detail-value-humidity {
+    font-size: 25px;
+}
+
+.detail-value-wind {
+    font-size: 25px;
+}
+
+.detail-value-pressure {
+    font-size: 25px;
+}
+
+.detail-value-grndLvl {
+    font-size: 25px;
+}
+
+.detail-label{
+    margin-bottom: 20px;
+}
+
+.humidity-icon,.wind-icon,.pressure-icon,.uv-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.day-forecast{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+.day-icon{
+    display: inline block;
+    width:50px;
+    height: 50px;
+    margin-right:10px;
+    margin-bottom: 14px;
+}
+
+#dayIcon{
+    size: 30px;
+}
+
+.temperature{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.wind-speed{
+    font-size: 1em;
+}
