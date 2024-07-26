@@ -1,4 +1,5 @@
-const apiKey = "6a3264974d4675cb845b1f26f74db032";
+import { apiKey } from "./config.js";
+
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const dayApiUrl = "https://api.openweathermap.org/data/2.5/forecast?units=metric&q=";
 
